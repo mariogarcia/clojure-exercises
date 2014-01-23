@@ -1,0 +1,13 @@
+
+apply plugin: 'groovy'
+
+dependencies {
+
+    compile project(':clojure')
+    compile 'org.codehaus.groovy:groovy:2.1.7'
+
+    testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
+    testCompile 'junit:junit:4.11'
+
+}
+

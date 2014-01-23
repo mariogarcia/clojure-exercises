@@ -1,0 +1,15 @@
+
+apply plugin: 'clojure'
+
+clojure {
+    warnOnReflection = true
+    aotCompile = true
+}
+
+dependencies {
+
+    compile project(':groovy')
+    compile 'org.clojure:clojure:1.5.1'
+
+}
+

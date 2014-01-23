@@ -1,0 +1,22 @@
+
+subprojects {
+
+ /* I include this buildscript block for enabling clojuresque plugin
+	in the Clojure module */
+	buildscript {
+    	repositories {
+            mavenCentral()
+        	maven { url 'http://clojars.org/repo' }
+    	}
+		dependencies {
+        	classpath 'clojuresque:clojuresque:1.7.0'
+    	}
+	}
+ /* Enabling common repositories for all modules */
+	repositories{
+        mavenLocal()
+		mavenCentral()
+        maven { url 'http://clojars.org/repo' }
+	}
+
+}
