@@ -20,7 +20,9 @@
   ]
   :extends oop.Vet)
 
-(defn vet-checkAnimal [this animal]
+(defn vet-checkAnimal
+  "The vet will the animal passed as argument"
+  [this animal]
   (str "not-so-good"))
 
 (defn vet-alternativeChecking [this animal]
