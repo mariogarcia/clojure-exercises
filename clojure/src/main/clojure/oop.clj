@@ -42,7 +42,8 @@
   (.checkAnimal vet animal))
 
 (defn host-healAnimals [this animals]
-  (loop ))
+  (doseq [a animals]
+    ()))
 
 (defn hos-healAnimalsByStrangeVet [this]
   (let [scooby (oop.Dog. "Doggy")
