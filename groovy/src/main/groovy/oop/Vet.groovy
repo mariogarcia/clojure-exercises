@@ -16,4 +16,8 @@ class Vet {
         return animal.health
     }
 
+    String checkAnimalArray(Animal...animals) {
+        return animals.collect { animal -> checkAnimalArray(animal) }.join('\n')
+    }
+
 }

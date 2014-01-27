@@ -33,12 +33,16 @@
   :name "oop.Hospital"
   :methods [
     [healAnimal [oop.Animal oop.Vet] String]
+    [healAnimals ["[Ljava.lang.Object;"] String]
     [healAnimalsByStrangeVet [] String]
   ]
   :prefix "hos-")
 
 (defn hos-healAnimal [this animal vet]
   (.checkAnimal vet animal))
+
+(defn host-healAnimals [this animals]
+  (loop ))
 
 (defn hos-healAnimalsByStrangeVet [this]
   (let [scooby (oop.Dog. "Doggy")
